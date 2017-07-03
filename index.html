@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Krzysztof Biernacki Website</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- pliki CSS: -->
+    <!-- oryginalny Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+
+    <!--###############################-->
+    <!-- MENU GÓRNE ###################-->
+    <!--###############################-->
+   
+        <header id="menu" class="navbar-fixed-top">
+            <div class="container">                     
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <nav class="navbar navbar-inverse" role="navigation" id="navigation_panel">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#moje-menu">
+                                <span class="sr-only">Nawigacja</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>  
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="my-menu">
+                            <div>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active">
+                                <a href="#home">Home</a>
+                                </li>
+                                <li>
+                                <a href="#studia">Studia</a>
+                                </li>
+                                <li>
+                                <a href="#aboutme">O Mnie</a>
+                                </li>
+                                <li>
+                                <a href="#languages">Języki</a>
+                                </li>
+                                <li>
+                                <a href="#projects">Projekty</a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </nav>
+                </div>
+            </div>
+        </header>   
+
+   
+    <!--###############################-->
+    <!--Carousel ######################-->
+    <!--###############################-->
+
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class ="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class ="item active">
+                <img src="images/carousel/1.jpg" alt="" "img-responsive">
+                <div class="carousel-caption">
+                    <h1>Aplikację C# i C++</h1>
+                </div>
+            </div>
+            <div class ="item">
+                <img src="images/carousel/2.jpg" alt="" "img-responsive">
+                <div class="carousel-caption">
+                    <h1>Baza danych SQL</h1>
+                </div>
+            </div>
+            <div class ="item">
+                <img src="images/carousel/3.jpg" alt="" "img-responsive">
+                <div class="carousel-caption">
+                    <h1>JavaScript i Bootstrap</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--###############################-->
+    <!--Languages #######################-->
+    <!--###############################-->
+
+    <section id="languages">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h2>Poznane przeze mnie języki</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="panel-group" id="menu_dropdown">
+                    <!-- languages element 1 -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel">
+                        <div class="panel-heading">
+                            <a href="#languages1" data-toggle="collapse" data-parent="#menu_dropdown">
+                                <h3>C# C Sharp <span class="glyphicon glyphicon-chevron-right small"></span></h3> 
+                            </a>
+                        </div>
+                        <div id="languages1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                               C# (C Sharp, dosłownie „cis”, „c z krzyżykiem”) – obiektowy język programowania zaprojektowany w latach 1998-2001 przez zespół pod kierunkiem Andersa Hejlsberga dla firmy Microsoft.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- languages element 2 -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel">
+                        <div class="panel-heading">
+                            <a href="#languages2" data-toggle="collapse" data-parent="#menu_dropdown">
+                                <h3>C++ <span class="glyphicon glyphicon-chevron-right small"></h3>
+                            </a>
+                        </div>
+                        <div id="languages2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                C++ – język programowania ogólnego przeznaczenia.
+                                Umożliwia abstrakcję danych oraz stosowanie kilku paradygmatów programowania: proceduralnego, obiektowego i generycznego. Charakteryzuje się wysoką wydajnością kodu wynikowego, bezpośrednim dostępem do zasobów sprzętowych i funkcji systemowych, łatwością tworzenia i korzystania z bibliotek (napisanych w C++, C lub innych językach), niezależnością od konkretnej platformy sprzętowej lub systemowej (co gwarantuje wysoką przenośność kodów źródłowych) oraz niewielkim środowiskiem uruchomieniowym. Podstawowym obszarem jego zastosowań są aplikacje i systemy operacyjne.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- nowosci element 3 -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel">
+                        <div class="panel-heading">
+                            <a href="#languages3" data-toggle="collapse" data-parent="#menu_dropdown">
+                                <h3>JavaScript i Bootstrap <span class="glyphicon glyphicon-chevron-right small"></h3>
+                            </a>
+                        </div>
+                        <div id="languages3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                JavaScript, JS – skryptowy język programowania, stworzony przez firmę Netscape, najczęściej stosowany na stronach internetowych. Twórcą JavaScriptu jest Brendan Eich.
+
+                                Bootstrap - framework CSS, rozwijany przez programistów Twittera, wydawany na licencji MIT[1]. Zawiera zestaw przydatnych narzędzi ułatwiających tworzenie interfejsu graficznego stron oraz aplikacji internetowych. Bazuje głównie na gotowych rozwiązaniach HTML oraz CSS (kompilowanych z plików Less[2]) i może być stosowany m.in. do stylizacji takich elementów jak teksty, formularze, przyciski, wykresy, nawigacje i innych komponentów wyświetlanych na stronie. Framework korzysta także z języka JavaScript.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <a href="#" class="btn btn-success btn-lg">Rozwiń wszystkie</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <hr>
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <img src="images/languages/csharp.png" class="img-responsive" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                    </div>
+                </div>
+                 <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <img src="images/languages/icon.javascript.png" class="img-responsive" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                    </div>
+                </div>     
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <img src="images/languages/bootstrap_solid.png" class="img-responsive" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!--###############################-->
+    <!--O NAS #########################-->
+    <!--###############################-->
+
+
+    <!--###############################-->
+    <!--FIRMA W LICZBACH ##############-->
+    <!--###############################-->
+
+    
+    <!--###############################-->
+    <!--ZESPÓŁ#########################-->
+    <!--###############################-->
+        
+         <hr>
+    <section id="aboutme">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
+                    <div class="tab-content">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">  
+                                <img src="images/mypic/me1.jpg" alt="" class="img-responsive img-rounded pull left">
+                            </div>
+                            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">  
+                                <h3>Krzysztof Biernacki</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis
+                                </p>
+                                <h2>
+                                    <a href="#krzysztof.biernacki03@gmail.com"><span class="glyphicon glyphicon-envelope"></span></a>
+                                </h2>                                  
+                            </div>                                
+                        </div>                                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--###############################-->
+    <!--OFERTA KURSÓW #################-->
+    <!--###############################-->
+
+    
+    <!--###############################-->
+    <!-- Nasi Klienci #################-->
+    <!--###############################-->
+
+
+
+    <!--###############################-->
+    <!--PROMOCJE ######################-->
+    <!--###############################-->
+    
+    
+     <!--###############################-->
+    <!--WYPRZEDAŻ #####################-->
+    <!--###############################-->
+
+     
+    <!--###############################-->
+    <!--KONTAKT #######################-->
+    <!--###############################-->
+
+   <hr>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">       
+                    <h2>Kontakt</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <h5>Napisz do mnie</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad </p>
+                    <h5>Zadzwoń</h5>
+                    <h2>111 111 111 </h2>  
+                </div> 
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="user" class="control-label">Imię i nazwisko:</label>
+                            <input type="text" class="form-control" name="user" placeholder="Imię i nazwisko">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="control-label">Email:</label>
+                            <input type="text" class="form-control" name="email" placeholder="adres email: twojemail@serwer.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="attentions" class="control-label">Uwagi:</label>
+                            <textarea class="form-control" name="attentions" rows="8" title="Wszystkie opinie mile widziane, te złe i te dobre!" data-toggle="tooltip" data-placement="top"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-lg">Wyślij</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--###############################-->
+    <!--STOPKA ########################-->
+    <!--###############################-->
+
+   <hr>
+    <section id="stopka">
+        <div class="container">
+            <footer class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">       
+                    <h2>Copyright 2017 &copy; </h2>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <a href="#"><img src="icons/facebook.png" alt="" class="img-responsive"></a>
+                    <a href="#"><img src="icons/googleplus.png" alt="" class="img-responsive"></a>
+                    <a href="#"><img src="icons/twitter.png" alt="" class="img-responsive"></a>
+                    <a href="#"><img src="icons/vimeo.png" alt="" class="img-responsive"></a>                 
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <!-- sekcja JavaScript  -->
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+        $("textarea").tooltip();
+    </script>
+  </body>
+</html>
