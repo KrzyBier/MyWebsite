@@ -4,14 +4,30 @@
     <title>Krzysztof Biernacki Website</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- pliki CSS: -->
-    <!-- oryginalny Bootstrap -->
+    <!--  CSS: -->
+    <!--  Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+
+    <!-- Scrolling -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    
+    <!-- MyCSS -->    
+    <link href="css/mycss.css" rel="stylesheet">
+
+    <!-- Animation -->
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+
+    <!-- MyResponsive Change -->
+    <link href="css/responsive.css" rel="stylesheet" media="screen">   
+    <!-- Open Sans-->    
+    <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,latin-ext">
+
   </head>
+
   <body>
 
     <!--###############################-->
-    <!-- MENU GÓRNE ###################-->
+    <!-- MENU #########################-->
     <!--###############################-->
    
         <header id="menu" class="navbar-fixed-top">
@@ -19,8 +35,8 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <nav class="navbar navbar-inverse" role="navigation" id="navigation_panel">
                     <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#moje-menu">
+                        <div class="navbar-header page-scroll">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-menu">
                                 <span class="sr-only">Nawigacja</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -31,19 +47,22 @@
                             <div>
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="active">
-                                <a href="#home">Home</a>
+                                <a class="page-scroll" href="#slides">Home</a>
                                 </li>
                                 <li>
-                                <a href="#studia">Studia</a>
+                                <a class="page-scroll" href="#studia">Studia</a>
                                 </li>
                                 <li>
-                                <a href="#aboutme">O Mnie</a>
+                                <a class="page-scroll" href="#aboutme">O Mnie</a>
                                 </li>
                                 <li>
-                                <a href="#languages">Języki</a>
+                                <a class="page-scroll" href="#languages">Języki</a>
                                 </li>
                                 <li>
-                                <a href="#projects">Projekty</a>
+                                <a class="page-scroll" href="#projects">Projekty</a>
+                                </li>
+                                <li>
+                                <a class="page-scroll" href="#contact">Kontakt</a>
                                 </li>
                             </ul>
                             </div>
@@ -71,18 +90,21 @@
                 <img src="images/carousel/1.jpg" alt="" "img-responsive">
                 <div class="carousel-caption">
                     <h1>Aplikację C# i C++</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante dui, posuere ut dui facilisis, laoreet convallis nulla. Pellentesque ut leo aliquam, tristique nunc ac, semper magna. Sed pretium lorem mi, sed accumsan leo semper id. Aliquam lorem risus, pulvinar et ultricies eu, varius vel lectus. Nullam dolor diam, sodales in sapien ut, sagittis volutpat erat. Vivamus eu est ac odio posuere gravida. Sed fermentum dignissim purus eu cursus. Phasellus non malesuada nibh.</p>
                 </div>
             </div>
             <div class ="item">
                 <img src="images/carousel/2.jpg" alt="" "img-responsive">
                 <div class="carousel-caption">
                     <h1>Baza danych SQL</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non vestibulum ex. Pellentesque non justo auctor, pharetra tellus a, venenatis turpis. Sed volutpat elementum scelerisque. Nunc ornare placerat nibh, non elementum turpis tincidunt in. Pellentesque bibendum iaculis sem, nec rhoncus enim fermentum eget. Praesent non tempus justo. In commodo tellus at arcu imperdiet ultrices. Suspendisse ut sem tincidunt, malesuada ipsum.</p>
                 </div>
             </div>
             <div class ="item">
                 <img src="images/carousel/3.jpg" alt="" "img-responsive">
                 <div class="carousel-caption">
                     <h1>JavaScript i Bootstrap</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis vulputate tellus. In maximus, leo a lacinia malesuada, est metus ultrices dolor, ut porta lacus mi id ligula. Maecenas eu lacus nec velit molestie tristique. Sed bibendum nec ante sed rhoncus. Aenean accumsan luctus metus, nec lobortis erat interdum id. Cras in nibh in nulla porttitor venenatis. Donec ac mollis ante, id sodales velit. Duis vel ipsum non tortor imperdiet fermentum. Vestibulum sed magna laoreet diam fermentum feugiat. Vestibulum odio ligula, gravida in mauris id, maximus feugiat risus. Aliquam erat volutpat. Proin dapibus mollis est quis mollis. Nam auctor rhoncus.</p>
                 </div>
             </div>
         </div>
@@ -90,14 +112,14 @@
 
 
     <!--###############################-->
-    <!--Languages #######################-->
+    <!--Languages #####################-->
     <!--###############################-->
 
     <section id="languages">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <h2>Poznane przeze mnie języki</h2>
+                    <h2 id="languagesTop">Poznane przeze mnie języki</h2>
                 </div>
             </div>
             <div class="row">
@@ -148,7 +170,7 @@
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="expandBtn">
                                 <a href="#" class="btn btn-success btn-lg">Rozwiń wszystkie</a>
                             </div>
                         </div>
@@ -160,19 +182,19 @@
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <div class="thumbnail">
                         <img src="images/languages/csharp.png" class="img-responsive" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                        <h2>C# C Sharp</h2>
                     </div>
                 </div>
                  <div class="col-sm-4 col-md-4 col-lg-4">
                     <div class="thumbnail">
                         <img src="images/languages/icon.javascript.png" class="img-responsive" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                        <h2>JavaScript</h2>
                     </div>
                 </div>     
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <div class="thumbnail">
                         <img src="images/languages/bootstrap_solid.png" class="img-responsive" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                        <h2>Bootstrap</h2>
                     </div>
                 </div>
             </div>
@@ -180,21 +202,8 @@
     </section>
 
 
-
-
-
     <!--###############################-->
-    <!--O NAS #########################-->
-    <!--###############################-->
-
-
-    <!--###############################-->
-    <!--FIRMA W LICZBACH ##############-->
-    <!--###############################-->
-
-    
-    <!--###############################-->
-    <!--ZESPÓŁ#########################-->
+    <!--ABOUTME #######################-->
     <!--###############################-->
         
          <hr>
@@ -203,7 +212,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
                     <div class="tab-content">
-                        <div class="row">
+                        <div class="row" id="center">
                             <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">  
                                 <img src="images/mypic/me1.jpg" alt="" class="img-responsive img-rounded pull left">
                             </div>
@@ -224,28 +233,7 @@
     </section>
 
     <!--###############################-->
-    <!--OFERTA KURSÓW #################-->
-    <!--###############################-->
-
-    
-    <!--###############################-->
-    <!-- Nasi Klienci #################-->
-    <!--###############################-->
-
-
-
-    <!--###############################-->
-    <!--PROMOCJE ######################-->
-    <!--###############################-->
-    
-    
-     <!--###############################-->
-    <!--WYPRZEDAŻ #####################-->
-    <!--###############################-->
-
-     
-    <!--###############################-->
-    <!--KONTAKT #######################-->
+    <!--CONTACT #######################-->
     <!--###############################-->
 
    <hr>
@@ -287,11 +275,11 @@
     </section>
 
     <!--###############################-->
-    <!--STOPKA ########################-->
+    <!--FOOTER ########################-->
     <!--###############################-->
 
    <hr>
-    <section id="stopka">
+    <section id="footer">
         <div class="container">
             <footer class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">       
@@ -310,6 +298,11 @@
     <!-- sekcja JavaScript  -->
     <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/bootstrap.js"></script>
+
+    <!-- NavBar Easing Animation -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/myJS.js"></script>
+
 
     <script>
         $("textarea").tooltip();
