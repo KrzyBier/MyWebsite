@@ -11,16 +11,24 @@
     <!-- Scrolling -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
     
-    <!-- MyCSS -->    
-    <link href="css/mycss.css" rel="stylesheet">
+
 
     <!-- Animation -->
     <link href="css/animate.css" rel="stylesheet" media="screen">
 
     <!-- MyResponsive Change -->
     <link href="css/responsive.css" rel="stylesheet" media="screen">   
+
+    <!-- Slick slider CSS -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
     <!-- Open Sans-->    
     <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,latin-ext">
+
+    <!-- MyCSS -->    
+    <link href="css/mycss.css" rel="stylesheet">
 
   </head>
 
@@ -50,16 +58,13 @@
                                 <a class="page-scroll" href="#slides">Home</a>
                                 </li>
                                 <li>
-                                <a class="page-scroll" href="#studia">Studia</a>
+                                <a class="page-scroll" href="#languages">Języki</a>
                                 </li>
                                 <li>
                                 <a class="page-scroll" href="#aboutme">O Mnie</a>
                                 </li>
                                 <li>
-                                <a class="page-scroll" href="#languages">Języki</a>
-                                </li>
-                                <li>
-                                <a class="page-scroll" href="#projects">Projekty</a>
+                                <a class="page-scroll" href="#education">Edukacja</a>
                                 </li>
                                 <li>
                                 <a class="page-scroll" href="#contact">Kontakt</a>
@@ -90,21 +95,21 @@
                 <img src="images/carousel/1.jpg" alt="" "img-responsive">
                 <div class="carousel-caption">
                     <h1>Aplikację C# i C++</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante dui, posuere ut dui facilisis, laoreet convallis nulla. Pellentesque ut leo aliquam, tristique nunc ac, semper magna. Sed pretium lorem mi, sed accumsan leo semper id. Aliquam lorem risus, pulvinar et ultricies eu, varius vel lectus. Nullam dolor diam, sodales in sapien ut, sagittis volutpat erat. Vivamus eu est ac odio posuere gravida. Sed fermentum dignissim purus eu cursus. Phasellus non malesuada nibh.</p>
+                    <p class=" hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante dui, posuere ut dui facilisis, laoreet convallis nulla. Pellentesque ut leo aliquam, tristique nunc ac, semper magna. Sed pretium lorem mi, sed accumsan leo semper id. Aliquam lorem risus, pulvinar et ultricies eu, varius vel lectus. Nullam dolor diam, sodales in sapien ut, sagittis volutpat erat. Vivamus eu est ac odio posuere gravida. Sed fermentum dignissim purus eu cursus. Phasellus non malesuada nibh.</p>
                 </div>
             </div>
             <div class ="item">
                 <img src="images/carousel/2.jpg" alt="" "img-responsive">
-                <div class="carousel-caption">
+                <div class="carousel-caption hidden-md-down">
                     <h1>Baza danych SQL</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non vestibulum ex. Pellentesque non justo auctor, pharetra tellus a, venenatis turpis. Sed volutpat elementum scelerisque. Nunc ornare placerat nibh, non elementum turpis tincidunt in. Pellentesque bibendum iaculis sem, nec rhoncus enim fermentum eget. Praesent non tempus justo. In commodo tellus at arcu imperdiet ultrices. Suspendisse ut sem tincidunt, malesuada ipsum.</p>
+                    <p class=" hidden-xs-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non vestibulum ex. Pellentesque non justo auctor, pharetra tellus a, venenatis turpis. Sed volutpat elementum scelerisque. Nunc ornare placerat nibh, non elementum turpis tincidunt in. Pellentesque bibendum iaculis sem, nec rhoncus enim fermentum eget. Praesent non tempus justo. In commodo tellus at arcu imperdiet ultrices. Suspendisse ut sem tincidunt, malesuada ipsum.</p>
                 </div>
             </div>
             <div class ="item">
                 <img src="images/carousel/3.jpg" alt="" "img-responsive">
                 <div class="carousel-caption">
                     <h1>JavaScript i Bootstrap</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis vulputate tellus. In maximus, leo a lacinia malesuada, est metus ultrices dolor, ut porta lacus mi id ligula. Maecenas eu lacus nec velit molestie tristique. Sed bibendum nec ante sed rhoncus. Aenean accumsan luctus metus, nec lobortis erat interdum id. Cras in nibh in nulla porttitor venenatis. Donec ac mollis ante, id sodales velit. Duis vel ipsum non tortor imperdiet fermentum. Vestibulum sed magna laoreet diam fermentum feugiat. Vestibulum odio ligula, gravida in mauris id, maximus feugiat risus. Aliquam erat volutpat. Proin dapibus mollis est quis mollis. Nam auctor rhoncus.</p>
+                    <p class=" hidden-md-down not-visible">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis vulputate tellus. In maximus, leo a lacinia malesuada, est metus ultrices dolor, ut porta lacus mi id ligula. Maecenas eu lacus nec velit molestie tristique. Sed bibendum nec ante sed rhoncus. Aenean accumsan luctus metus, nec lobortis erat interdum id. Cras in nibh in nulla porttitor venenatis. Donec ac mollis ante, id sodales velit. Duis vel ipsum non tortor imperdiet fermentum. Vestibulum sed magna laoreet diam fermentum feugiat. Vestibulum odio ligula, gravida in mauris id, maximus feugiat risus. Aliquam erat volutpat. Proin dapibus mollis est quis mollis. Nam auctor rhoncus.</p>
                 </div>
             </div>
         </div>
@@ -153,21 +158,64 @@
                         </div>
                     </div>
 
-                    <!-- nowosci element 3 -->
+                    <!-- languages element 3 -->
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel">
                         <div class="panel-heading">
                             <a href="#languages3" data-toggle="collapse" data-parent="#menu_dropdown">
-                                <h3>JavaScript i Bootstrap <span class="glyphicon glyphicon-chevron-right small"></h3>
+                                <h3>JavaScript<span class="glyphicon glyphicon-chevron-right small"></h3>
                             </a>
                         </div>
                         <div id="languages3" class="panel-collapse collapse">
                             <div class="panel-body">
                                 JavaScript, JS – skryptowy język programowania, stworzony przez firmę Netscape, najczęściej stosowany na stronach internetowych. Twórcą JavaScriptu jest Brendan Eich.
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- languages element 4 -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel">
+                        <div class="panel-heading">
+                            <a href="#languages4" data-toggle="collapse" data-parent="#menu_dropdown">
+                                <h3>JQuerry<span class="glyphicon glyphicon-chevron-right small"></h3>
+                            </a>
+                        </div>
+                        <div id="languages4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                JQuerry - Lekka biblioteka programistyczna dla języka JavaScript, ułatwiająca korzystanie z JavaScriptu (w tym manipulację drzewem DOM). Kosztem niewielkiego spadku wydajności w stosunku do profesjonalnie napisanego kodu w niewspomaganym JavaScripcie pozwala osiągnąć interesujące efekty animacji, dodać dynamiczne zmiany strony, wykonać zapytania AJAX. Większość wtyczek i skryptów opartych na jQuery działa na stronach nie wymagając zmian w kodzie HTML (np. zamienia klasyczne galerie złożone z miniatur linkujących do obrazków w dynamiczną galerię).
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- languages element 5 -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel">
+                        <div class="panel-heading">
+                            <a href="#languages5" data-toggle="collapse" data-parent="#menu_dropdown">
+                                <h3>Bootstrap<span class="glyphicon glyphicon-chevron-right small"></h3>
+                            </a>
+                        </div>
+                        <div id="languages5" class="panel-collapse collapse">
+                            <div class="panel-body">
                                 Bootstrap - framework CSS, rozwijany przez programistów Twittera, wydawany na licencji MIT[1]. Zawiera zestaw przydatnych narzędzi ułatwiających tworzenie interfejsu graficznego stron oraz aplikacji internetowych. Bazuje głównie na gotowych rozwiązaniach HTML oraz CSS (kompilowanych z plików Less[2]) i może być stosowany m.in. do stylizacji takich elementów jak teksty, formularze, przyciski, wykresy, nawigacje i innych komponentów wyświetlanych na stronie. Framework korzysta także z języka JavaScript.
                             </div>
                         </div>
                     </div>
+
+                    <!-- languages element 6 -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel">
+                        <div class="panel-heading">
+                            <a href="#languages6" data-toggle="collapse" data-parent="#menu_dropdown">
+                                <h3>SQL<span class="glyphicon glyphicon-chevron-right small"></h3>
+                            </a>
+                        </div>
+                        <div id="languages6" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                SQL (ang. Structured Query Language wym. /ɛskjuːˈɛl/) – strukturalny język zapytań używany do tworzenia, modyfikowania baz danych oraz do umieszczania i pobierania danych z baz danych. Język SQL jest językiem deklaratywnym.
+                            </div>
+                        </div>
+                    </div>   
+
+
+
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="expandBtn">
@@ -178,7 +226,7 @@
                 </div>
             </div>
         <hr>
-            <div class="row">
+            <div class="row regular slider">
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <div class="thumbnail">
                         <img src="images/languages/csharp.png" class="img-responsive" alt="">
@@ -197,7 +245,30 @@
                         <h2>Bootstrap</h2>
                     </div>
                 </div>
+
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <img src="images/languages/HTML5_Logo_512.png" class="img-responsive" alt="">
+                        <h2>C# C Sharp</h2>
+                    </div>
+                </div>
+                 <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <img src="images/languages/mysql-2.svg" class="img-responsive" alt="">
+                        <h2>JavaScript</h2>
+                    </div>
+                </div>     
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <img src="images/languages/CSS3_logo_and_wordmark.png" class="img-responsive" alt="">
+                        <h2>Bootstrap</h2>
+                    </div>
+                </div>
+
             </div>
+
+
+
         </div>
     </section>
 
@@ -206,7 +277,7 @@
     <!--ABOUTME #######################-->
     <!--###############################-->
         
-         <hr>
+    <hr>
     <section id="aboutme">
         <div class="container">
             <div class="row">
@@ -219,7 +290,7 @@
                             <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">  
                                 <h3>Krzysztof Biernacki</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis
+                                        Mam na imię Krzysztof Biernacki. Jestem kreatywną, dążącą do ciągłego poszerzania swojej wiedzy osobą. Swój początek w programowaniu rozpocząłem od książki „Szkoła programowania Język C“ Stephana Prata. 
                                 </p>
                                 <h2>
                                     <a href="#krzysztof.biernacki03@gmail.com"><span class="glyphicon glyphicon-envelope"></span></a>
@@ -231,6 +302,56 @@
             </div>
         </div>
     </section>
+
+    <!--###############################-->
+    <!--EDUCATION #######################-->
+    <!--###############################-->
+
+    <hr>
+    <section id="education">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
+                    <div class="tab-content">
+                        <div class="row" id="center">
+
+
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                  <img class="d-block img-fluid" src="images/education/timthumb.jpg" alt="First slide">
+                                </div>
+                                <div class="item">
+                                  <img class="d-block img-fluid" src="images/education/timthumb2.jpg" alt="Second slide">
+                                </div>
+                                <div class="item">
+                                  <img class="d-block img-fluid" src="images/education/timthumb3.jpg" alt="Third slide">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
+                                <h2>Wydział Matematyki i Informatyki UWM</h2>
+                                <p>
+                                        Wydział Matematyki i Informatyki Uniwersytetu Warmińsko-Mazurskiego (WMiI) – wydział Uniwersytetu Warmińsko-Mazurskiego w Olsztynie oferujący studia na dwóch kierunkach:
+
+                                        Informatyka
+                                        Matematyka
+                                        w trybie studiów stacjonarnych i niestacjonarnych. Ponadto oferuje studia podyplomowe.
+
+                                        Wydział zatrudnia 8 profesorów, 14 doktorów habilitowanych, 53 doktorów i 28 magistrów.
+                                </p>
+                                <h2>
+                                    <a href="http://wmii.uwm.edu.pl/"><span class="glyphicon glyphicon-globe"></span></a>
+                                </h2>                                  
+                            </div>                                
+                        </div>                                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!--###############################-->
     <!--CONTACT #######################-->
@@ -286,10 +407,10 @@
                     <h2>Copyright 2017 &copy; </h2>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <a href="#"><img src="icons/facebook.png" alt="" class="img-responsive"></a>
+                    <a href="#"><img src="icons/GitHub-Mark.png" alt="" class="img-responsive"></a>
                     <a href="#"><img src="icons/googleplus.png" alt="" class="img-responsive"></a>
                     <a href="#"><img src="icons/twitter.png" alt="" class="img-responsive"></a>
-                    <a href="#"><img src="icons/vimeo.png" alt="" class="img-responsive"></a>                 
+                    <a href="#"><img src="icons/github (1).png" alt="" class="img-responsive"></a>                 
                 </div>
             </footer>
         </div>
@@ -297,10 +418,16 @@
 
     <!-- sekcja JavaScript  -->
     <script src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
+
 
     <!-- NavBar Easing Animation -->
     <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Slick js -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
     <script src="js/myJS.js"></script>
 
 

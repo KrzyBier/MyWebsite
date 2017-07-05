@@ -1,4 +1,16 @@
-topMenu = $("#navigation_panel").outerHeight();
+
+
+var lastId,
+    topMenu = $("#navigation_panel");
+    topMenuHeight = topMenu.outerHeight(),
+    // all element of menu 'a'
+    menuItems = topMenu.find("a"),
+    // All ID's 
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
+
 
 $(function() {
     $(document).on('click', 'a.page-scroll', function(event) {
@@ -10,23 +22,40 @@ $(function() {
     });
 });
 
+//Scrolling
 $(window).scroll(function(){
+   // Actual localization in window
    var fromTop = $(this).scrollTop()+topMenuHeight;
-   
-   // Pobierz identyfikator aktualnej pozycji przewinięcia
+
+
+   // Place where u are in window
    var cur = scrollItems.map(function(){
      if ($(this).offset().top < fromTop)
        return this;
    });
-   // Pobierz identyfikator aktualnego elementu
+
+
+   // Name of ID section
    cur = cur[cur.length-1];
+
    var id = cur && cur.length ? cur[0].id : "";
    
    if (lastId !== id) {
        lastId = id;
-       // Ustaw lub usun "active" - odpowiada za podświetlenie pozycji w menu
+       // Add "active" class or remove
        menuItems
          .parent().removeClass("active")
          .end().filter("[href=#"+id+"]").parent().addClass("active");
    }                   
 });
+$(document).on('ready', function() {
+  $(".regular").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
+
+$('#carouselExampleSlidesOnly').carousel()
+});
+

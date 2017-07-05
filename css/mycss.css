@@ -177,7 +177,51 @@ h4{
 	color: #ffffff;
 }
 
+#footer h4{
+	color: #ffffff;		
+}
+
+#footer img{
+	float: right;
+	margin-right: 2rem;
+	width: 4rem;
+}
+
+/* #### EDUCATION #### */
+
+#education{
+	background: rgba(211, 211, 211, 0.4);
+}
+
+
+#education .img-responsive {
+    margin: 0 auto;
+}
+
+#education{
+	text-align: center;
+}
+
+
+#education span:hover{
+	-webkit-animation: rubberBand .8s;
+	animation: rubberBand .8s;
+}
+
+
+
+
+/* #### CONTACT #### */
 #contact button:hover{
 	-webkit-animation: tada .9s;
 	animation: tada .9s;
 }
+
+
+/* ###### SLICKER ###### */
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
