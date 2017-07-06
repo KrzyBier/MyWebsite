@@ -59,3 +59,22 @@ $(document).on('ready', function() {
 $('#carouselExampleSlidesOnly').carousel()
 });
 
+// all elements with 'a'
+var sectionLan = $('#languages').find('a');
+var collapseFlag = false;
+
+$( "#expandBtn" ).on( "click", function() {
+  
+
+    var sectionLan = $('#languages').find('.collapse');
+    sectionLan.each(function() {
+    $( this ).collapse('toggle');
+    }); 
+
+
+  
+
+});
+
+var sectionLan = $('#languages').find('a');
+
